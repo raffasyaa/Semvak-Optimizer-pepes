@@ -26,5 +26,5 @@ bash <(curl -s https://raw.githubusercontent.com/raffasyaa/Semvak-Optimizer-pepe
 - Ubuntu16+ </br>
 
 # Special Thanks to
-- [Allah SWT]
+- Allah SWT
 - [SaputraTech](https://t.me/SaputraTech)
