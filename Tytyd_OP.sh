@@ -34,6 +34,7 @@ display_menu() {
     echo " ➽ Recode By: https://t.me/SaputraTech"
     echo -e "${CYAN}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m${NC}"
     echo " ➽ Press any key to start Instaling"
+    echo ""
     read -s -n 1 key
 }
 
