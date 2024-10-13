@@ -24,7 +24,7 @@ display_menu() {
     kern=$(uname -r)
 
     clear
-    echo -e "${YELLOW}┌─────────────${NC} ${LIGHT}◈ Service Information ◈ ${NC}${CYAN}─────────────┐\033[0m${NC}"
+    echo -e "${YELLOW}┌─────────────${NC} ${LIGHT}◈ Service Information ◈ ${NC}${YELLOW}─────────────┐\033[0m${NC}"
     echo -e "${YELLOW} ➽ OS      : $opsy ${NC}"
     echo -e "${YELLOW} ➽ Arch    : $arch ($lbit Bit) ${NC}"
     echo -e "${YELLOW} ➽ Kernel  : $kern ${NC}"
@@ -133,7 +133,6 @@ sysctl_config() {
 		echo "vm.min_free_kbytes = 65536" >> /etc/sysctl.conf
 		echo "vm.swappiness = 10" >> /etc/sysctl.conf
 		echo "vm.vfs_cache_pressure = 50" >> /etc/sysctl.conf
-        clear
         echo -e ""
         echo -e ""
         echo -e "${CYAN}
@@ -223,7 +222,6 @@ install_kernel() {
 clear
 uninstall_script() {
     cloner
-    clear
     echo -e "${CYAN}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m${NC}"
     echo -e "${YELLOW}       TCP Hybla settings succeed removed.${NC}"
     echo -e "${CYAN}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m${NC}"
@@ -243,8 +241,7 @@ uninstall_script() {
 ██████╔╝╚██████╔╝╚█████╔╝╚█████╔╝███████╗███████╗██████╔╝
 ╚═════╝░░╚═════╝░░╚════╝░░╚════╝░╚══════╝╚══════╝╚═════╝░${NC}"
            echo -e ""
-    sudo sysctl -p
-    clear
+    sudo sysctl -pA
     sudo sysctl --system
 }
 
