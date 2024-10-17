@@ -24,11 +24,11 @@ display_menu() {
     kern=$(uname -r)
 
     clear
-    echo -e "${YELLOW}┌─────────────${NC} ${LIGHT}◈ Service Information ◈ ${NC}${YELLOW}─────────────┐\033[0m${NC}"
+    echo -e "${YELLOW}┌────────────${NC} ${LIGHT}◈ Service Information ◈ ${NC}${YELLOW}────────────┐\033[0m${NC}"
     echo -e "${YELLOW} ➽ OS      : $opsy ${NC}"
     echo -e "${YELLOW} ➽ Arch    : $arch ($lbit Bit) ${NC}"
     echo -e "${YELLOW} ➽ Kernel  : $kern ${NC}"
-    echo -e "${YELLOW}└───────────────────────────────────────────────────┘\033[0m${NC}"
+    echo -e "${YELLOW}└─────────────────────────────────────────────────┘\033[0m${NC}"
     echo " ➽ Automatically enable TCP Hybla script"
     echo -e "${CYAN}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m${NC}"
     echo " ➽ Recode By: https://t.me/SaputraTech"
